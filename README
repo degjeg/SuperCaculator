@@ -1,6 +1,17 @@
-GlossButton
+supported operators
+    +  :Add two numbers
+    -  :Subtraction
+    *  :Multiply
+    /  :divide
+    
+    ()[]{} :expression can include Bracket to change caculation Order
 
-Glossy buttons like inbuilt calculator app
-
-By Codepadawan
-June 2011
+    Trigonometric function
+    sin cos tan cot
+    asin acos atan acot
+    
+    ^ pow  example:4^3=64
+    ! Factorial example:6!=6*5*4*3*2*1 = 720
+    
+    other : developing
+  
