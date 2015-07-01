@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomButton.h"
+#import "Expression.h"
+#import "Caculator.h"
 
 @interface GlossButtonViewController : UIViewController {
 
@@ -59,7 +61,10 @@
 
 @property (retain) NSMutableArray *buttons;
 
-@property (retain) UITextView *expression;
+@property (retain) UITextView *tvExpression;
 @property (retain) UITextView *tvResult;
+
+@property (retain) Expression *expression;
+@property (retain) Caculator *caculator;
 @end
 

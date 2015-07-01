@@ -18,27 +18,27 @@
 
 @implementation GlossButtonViewController
 
-@synthesize	button1=_button1;
-@synthesize	button2=_button2;
-@synthesize	button3=_button3;
-@synthesize	button4=_button4;
-@synthesize	button5=_button5;
-@synthesize	button6=_button6;
-@synthesize	button7=_button7;
-@synthesize	button8=_button8;
-@synthesize	button9=_button9;
-@synthesize	button0=_button0;
-@synthesize	buttonPoint=_buttonPoint;
-
-@synthesize	buttonPlus=_buttonPlus;
-@synthesize	buttonMinus=_buttonMinus;
-@synthesize	buttonDivide=_buttonDivide;
-@synthesize	buttonMultiply=_buttonMultiply;
-@synthesize	buttonEquals=_buttonEquals;
-@synthesize	buttonClear=_buttonClear;
-@synthesize	buttonPlusminus=_buttonPlusminus;
-
-@synthesize buttons=_buttons;
+//@synthesize	button1=_button1;
+//@synthesize	button2=_button2;
+//@synthesize	button3=_button3;
+//@synthesize	button4=_button4;
+//@synthesize	button5=_button5;
+//@synthesize	button6=_button6;
+//@synthesize	button7=_button7;
+//@synthesize	button8=_button8;
+//@synthesize	button9=_button9;
+//@synthesize	button0=_button0;
+//@synthesize	buttonPoint=_buttonPoint;
+//
+//@synthesize	buttonPlus=_buttonPlus;
+//@synthesize	buttonMinus=_buttonMinus;
+//@synthesize	buttonDivide=_buttonDivide;
+//@synthesize	buttonMultiply=_buttonMultiply;
+//@synthesize	buttonEquals=_buttonEquals;
+//@synthesize	buttonClear=_buttonClear;
+//@synthesize	buttonPlusminus=_buttonPlusminus;
+//
+//@synthesize buttons=_buttons;
 
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -59,6 +59,7 @@
 
 
 
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,6 +68,10 @@
     //    customView.frame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT);
     //    customView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
     //    [self.view addSubview:customView];
+    
+    self.caculator = [[Caculator alloc]init];
+    self.expression = [[Expression alloc]init];
+    self.expression.caculator = self.caculator;
     
     NSCharacterSet* set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     
@@ -183,25 +188,25 @@
         [self.view addSubview:button];
     }
     
-    self.expression = [[UITextView alloc]init];
-    self.expression.frame = CGRectMake(10, 20, SCREEN_WIDTH-20, 100);
-    self.expression.backgroundColor = [UIColor colorWithRed:0.8 green:0.4 blue:0.9 alpha:1.0];
+    self.tvExpression = [[UITextView alloc]init];
+    self.tvExpression.frame = CGRectMake(10, 20, SCREEN_WIDTH-20, 100);
+    self.tvExpression.backgroundColor = [UIColor colorWithRed:0.8 green:0.4 blue:0.9 alpha:1.0];
     //    self.expression.borderStyle = UITextBorderStyleRoundedRect;
-    self.expression.textAlignment = NSTextAlignmentRight;
+    self.tvExpression.textAlignment = NSTextAlignmentRight;
     
     //设置输入框内容的字体样式和大小
-    self.expression.font = [UIFont fontWithName:@"Arial" size:20.0f];
+    self.tvExpression.font = [UIFont fontWithName:@"Arial" size:20.0f];
     
-    self.expression.keyboardType = UIKeyboardTypeASCIICapable;
+    self.tvExpression.keyboardType = UIKeyboardTypeASCIICapable;
     //设置字体颜色
-    self.expression.textColor = [UIColor blackColor];
+    self.tvExpression.textColor = [UIColor blackColor];
     
     //    self.expression.text = @"9-(3*(4-2*(2-4)))";
 //    self.expression.text = @"sin45";
-        self.expression.text = @"0-2^-5+6*sin(30)";
-    [self.expression addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
+        self.tvExpression.text = @"0-2^-5+6*sin(30)";
+    [self.tvExpression addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
     
-    [self.view addSubview:self.expression];
+    [self.view addSubview:self.tvExpression];
     //    [formulaTextField first];
     
     self.tvResult = [[UITextView alloc]init];
@@ -310,47 +315,53 @@
 }
 
 -(void)buttonTapped:(id)sender {
-    [self.expression resignFirstResponder];
+    [self.tvExpression resignFirstResponder];
+    
+    [self.expression.expression setString:self.tvExpression.text];
     if(sender == self.button0) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"0"];
+        [self.expression add:@"0" at:-1];
     } else if(sender == self.button1) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"1"];
+        [self.expression add:@"1" at:-1];
     } else if(sender == self.button2) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"2"];
+        [self.expression add:@"2" at:-1];
     } else if(sender == self.button3) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"3"];
+        [self.expression add:@"3" at:-1];
     } else if(sender == self.button4) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"4"];
+        [self.expression add:@"4" at:-1];
     } else if(sender == self.button5) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"5"];
+        [self.expression add:@"5" at:-1];
     } else if(sender == self.button6) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"6"];
+        [self.expression add:@"6" at:-1];
     } else if(sender == self.button7) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"7"];
+        [self.expression add:@"7" at:-1];
     } else if(sender == self.button8) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"8"];
+        [self.expression add:@"8" at:-1];
     } else if(sender == self.button9) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"9"];
+        [self.expression add:@"9" at:-1];
     }
     
     if(sender == self.buttonPoint) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"."];
+        [self.expression add:@"." at:-1];
     } else if(sender == self.buttonPlus) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"+"];
+        [self.expression add:@"+" at:-1];
     } else if(sender == self.buttonMinus) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"-"];
+        [self.expression add:@"-" at:-1];
     } else if(sender == self.buttonDivide) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"/"];
+        [self.expression add:@"/" at:-1];
     } else if(sender == self.buttonMultiply) {
-        self.expression.text = [self.expression.text stringByAppendingString:@"*"];
+        [self.expression add:@"*" at:-1];
     } else if(sender == self.buttonClear) {
-        self.expression.text = @"";
+        [self.expression clear];
+        self.tvResult.text = @"0";
+    } else if(sender == self.buttonPlusminus) {
+        [self.expression add:@"±" at:-1];
     }
     
+    self.tvExpression.text = self.expression.expression;
+    
     if(sender == self.buttonEquals) {
-        Caculator *caculator = [[Caculator alloc]init];
-        
-        CaculateResult result = [caculator evaulateExpression:self.expression.text];
+        [self.caculator reset];
+        CaculateResult result = [self.caculator evaulateExpression:self.expression.expression];
         
         
         //        10000000000

@@ -79,7 +79,11 @@
 }
 */
 
-
+-(void)reset {
+    [self.operators removeAllObjects];
+    [self.numbers removeAllObjects];
+    self.lastResult = nil;
+}
 //计算指定表达式的值
 -(CaculateResult)evaulateExpression:(NSString*)expression {
     expression = [expression lowercaseString];//小写

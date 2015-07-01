@@ -38,10 +38,10 @@ enum ScanResultType{
 @property(retain) NSMutableArray* sos;//supported operator s
 @property(retain) NSMutableArray* operators;//Array of operator
 
-@property(nonatomic, assign)id last;
-
 @property(nonatomic, assign) ScanResult* lastResult;
 
+
+-(void)reset;
 //计算指定表达式的值
 -(CaculateResult)evaulateExpression:(NSString*)expression;
 
