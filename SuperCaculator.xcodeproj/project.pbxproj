@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560F44241B43A7050057F222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44231B43A7050057F222 /* main.m */; };
+		560F44271B43A7050057F222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44261B43A7050057F222 /* AppDelegate.m */; };
+		560F442A1B43A7050057F222 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44291B43A7050057F222 /* ViewController.m */; };
+		560F442D1B43A7050057F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560F442B1B43A7050057F222 /* Main.storyboard */; };
+		560F442F1B43A7050057F222 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560F442E1B43A7050057F222 /* Images.xcassets */; };
+		560F44321B43A7050057F222 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560F44301B43A7050057F222 /* LaunchScreen.xib */; };
+		560F443E1B43A7050057F222 /* SuperCaculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F443D1B43A7050057F222 /* SuperCaculatorTests.m */; };
+		560F445E1B43AE0F0057F222 /* Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F444C1B43AE0F0057F222 /* Operator.m */; };
+		560F445F1B43AE0F0057F222 /* Operator_Pre1.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F444E1B43AE0F0057F222 /* Operator_Pre1.m */; };
+		560F44601B43AE0F0057F222 /* Operator_Mid2.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44501B43AE0F0057F222 /* Operator_Mid2.m */; };
+		560F44611B43AE0F0057F222 /* Operator_End1.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44521B43AE0F0057F222 /* Operator_End1.m */; };
+		560F44621B43AE0F0057F222 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44541B43AE0F0057F222 /* Number.m */; };
+		560F44631B43AE0F0057F222 /* GlossButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44561B43AE0F0057F222 /* GlossButtonViewController.m */; };
+		560F44641B43AE0F0057F222 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44581B43AE0F0057F222 /* CustomView.m */; };
+		560F44651B43AE0F0057F222 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F445A1B43AE0F0057F222 /* CustomButton.m */; };
+		560F44661B43AE0F0057F222 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F445C1B43AE0F0057F222 /* Common.m */; };
+		560F446C1B43AE3A0057F222 /* Expression.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44681B43AE3A0057F222 /* Expression.m */; };
+		560F446D1B43AE3A0057F222 /* Caculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F446A1B43AE3A0057F222 /* Caculator.m */; };
+		560F446F1B43C0280057F222 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F446E1B43C0280057F222 /* CoreGraphics.framework */; };
+		560F44741B43C1840057F222 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F44731B43C1840057F222 /* UIKit.framework */; };
+		560F44761B43C1900057F222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F44751B43C1900057F222 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		560F44381B43A7050057F222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560F44161B43A7050057F222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 560F441D1B43A7050057F222;
+			remoteInfo = SuperCaculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		560F441E1B43A7050057F222 /* SuperCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		560F44221B43A7050057F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560F44231B43A7050057F222 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		560F44251B43A7050057F222 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		560F44261B43A7050057F222 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		560F44281B43A7050057F222 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		560F44291B43A7050057F222 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		560F442C1B43A7050057F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		560F442E1B43A7050057F222 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		560F44311B43A7050057F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		560F44371B43A7050057F222 /* SuperCaculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCaculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		560F443C1B43A7050057F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560F443D1B43A7050057F222 /* SuperCaculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCaculatorTests.m; sourceTree = "<group>"; };
+		560F444C1B43AE0F0057F222 /* Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Operator.m; path = caculator/Operator.m; sourceTree = "<group>"; };
+		560F444D1B43AE0F0057F222 /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operator.h; path = caculator/Operator.h; sourceTree = "<group>"; };
+		560F444E1B43AE0F0057F222 /* Operator_Pre1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Operator_Pre1.m; path = caculator/Operator_Pre1.m; sourceTree = "<group>"; };
+		560F444F1B43AE0F0057F222 /* Operator_Pre1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operator_Pre1.h; path = caculator/Operator_Pre1.h; sourceTree = "<group>"; };
+		560F44501B43AE0F0057F222 /* Operator_Mid2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Operator_Mid2.m; path = caculator/Operator_Mid2.m; sourceTree = "<group>"; };
+		560F44511B43AE0F0057F222 /* Operator_Mid2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operator_Mid2.h; path = caculator/Operator_Mid2.h; sourceTree = "<group>"; };
+		560F44521B43AE0F0057F222 /* Operator_End1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Operator_End1.m; path = caculator/Operator_End1.m; sourceTree = "<group>"; };
+		560F44531B43AE0F0057F222 /* Operator_End1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operator_End1.h; path = caculator/Operator_End1.h; sourceTree = "<group>"; };
+		560F44541B43AE0F0057F222 /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Number.m; path = caculator/Number.m; sourceTree = "<group>"; };
+		560F44551B43AE0F0057F222 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Number.h; path = caculator/Number.h; sourceTree = "<group>"; };
+		560F44561B43AE0F0057F222 /* GlossButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlossButtonViewController.m; path = caculator/GlossButtonViewController.m; sourceTree = "<group>"; };
+		560F44571B43AE0F0057F222 /* GlossButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlossButtonViewController.h; path = caculator/GlossButtonViewController.h; sourceTree = "<group>"; };
+		560F44581B43AE0F0057F222 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = caculator/CustomView.m; sourceTree = "<group>"; };
+		560F44591B43AE0F0057F222 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = caculator/CustomView.h; sourceTree = "<group>"; };
+		560F445A1B43AE0F0057F222 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = caculator/CustomButton.m; sourceTree = "<group>"; };
+		560F445B1B43AE0F0057F222 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = caculator/CustomButton.h; sourceTree = "<group>"; };
+		560F445C1B43AE0F0057F222 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = caculator/Common.m; sourceTree = "<group>"; };
+		560F445D1B43AE0F0057F222 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = caculator/Common.h; sourceTree = "<group>"; };
+		560F44681B43AE3A0057F222 /* Expression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Expression.m; path = caculator/caculator/Expression.m; sourceTree = "<group>"; };
+		560F44691B43AE3A0057F222 /* Expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expression.h; path = caculator/caculator/Expression.h; sourceTree = "<group>"; };
+		560F446A1B43AE3A0057F222 /* Caculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Caculator.m; path = caculator/caculator/Caculator.m; sourceTree = "<group>"; };
+		560F446B1B43AE3A0057F222 /* Caculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Caculator.h; path = caculator/caculator/Caculator.h; sourceTree = "<group>"; };
+		560F446E1B43C0280057F222 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		560F44731B43C1840057F222 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		560F44751B43C1900057F222 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		560F441B1B43A7050057F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560F44761B43C1900057F222 /* Foundation.framework in Frameworks */,
+				560F44741B43C1840057F222 /* UIKit.framework in Frameworks */,
+				560F446F1B43C0280057F222 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560F44341B43A7050057F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		560F44151B43A7050057F222 = {
+			isa = PBXGroup;
+			children = (
+				560F44201B43A7050057F222 /* SuperCaculator */,
+				560F443A1B43A7050057F222 /* SuperCaculatorTests */,
+				560F441F1B43A7050057F222 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		560F441F1B43A7050057F222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				560F441E1B43A7050057F222 /* SuperCaculator.app */,
+				560F44371B43A7050057F222 /* SuperCaculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		560F44201B43A7050057F222 /* SuperCaculator */ = {
+			isa = PBXGroup;
+			children = (
+				560F444B1B43ADED0057F222 /* caculator */,
+				560F44251B43A7050057F222 /* AppDelegate.h */,
+				560F44261B43A7050057F222 /* AppDelegate.m */,
+				560F44281B43A7050057F222 /* ViewController.h */,
+				560F44291B43A7050057F222 /* ViewController.m */,
+				560F442B1B43A7050057F222 /* Main.storyboard */,
+				560F442E1B43A7050057F222 /* Images.xcassets */,
+				560F44301B43A7050057F222 /* LaunchScreen.xib */,
+				560F44211B43A7050057F222 /* Supporting Files */,
+				560F44701B43C0B30057F222 /* framework */,
+			);
+			path = SuperCaculator;
+			sourceTree = "<group>";
+		};
+		560F44211B43A7050057F222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				560F44221B43A7050057F222 /* Info.plist */,
+				560F44231B43A7050057F222 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		560F443A1B43A7050057F222 /* SuperCaculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				560F443D1B43A7050057F222 /* SuperCaculatorTests.m */,
+				560F443B1B43A7050057F222 /* Supporting Files */,
+			);
+			path = SuperCaculatorTests;
+			sourceTree = "<group>";
+		};
+		560F443B1B43A7050057F222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				560F443C1B43A7050057F222 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		560F444B1B43ADED0057F222 /* caculator */ = {
+			isa = PBXGroup;
+			children = (
+				560F44671B43AE2B0057F222 /* caculator */,
+				560F444C1B43AE0F0057F222 /* Operator.m */,
+				560F444D1B43AE0F0057F222 /* Operator.h */,
+				560F444E1B43AE0F0057F222 /* Operator_Pre1.m */,
+				560F444F1B43AE0F0057F222 /* Operator_Pre1.h */,
+				560F44501B43AE0F0057F222 /* Operator_Mid2.m */,
+				560F44511B43AE0F0057F222 /* Operator_Mid2.h */,
+				560F44521B43AE0F0057F222 /* Operator_End1.m */,
+				560F44531B43AE0F0057F222 /* Operator_End1.h */,
+				560F44541B43AE0F0057F222 /* Number.m */,
+				560F44551B43AE0F0057F222 /* Number.h */,
+				560F44561B43AE0F0057F222 /* GlossButtonViewController.m */,
+				560F44571B43AE0F0057F222 /* GlossButtonViewController.h */,
+				560F44581B43AE0F0057F222 /* CustomView.m */,
+				560F44591B43AE0F0057F222 /* CustomView.h */,
+				560F445A1B43AE0F0057F222 /* CustomButton.m */,
+				560F445B1B43AE0F0057F222 /* CustomButton.h */,
+				560F445C1B43AE0F0057F222 /* Common.m */,
+				560F445D1B43AE0F0057F222 /* Common.h */,
+			);
+			name = caculator;
+			sourceTree = "<group>";
+		};
+		560F44671B43AE2B0057F222 /* caculator */ = {
+			isa = PBXGroup;
+			children = (
+				560F44681B43AE3A0057F222 /* Expression.m */,
+				560F44691B43AE3A0057F222 /* Expression.h */,
+				560F446A1B43AE3A0057F222 /* Caculator.m */,
+				560F446B1B43AE3A0057F222 /* Caculator.h */,
+			);
+			name = caculator;
+			sourceTree = "<group>";
+		};
+		560F44701B43C0B30057F222 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				560F44751B43C1900057F222 /* Foundation.framework */,
+				560F44731B43C1840057F222 /* UIKit.framework */,
+				560F446E1B43C0280057F222 /* CoreGraphics.framework */,
+			);
+			name = framework;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		560F441D1B43A7050057F222 /* SuperCaculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560F44411B43A7050057F222 /* Build configuration list for PBXNativeTarget "SuperCaculator" */;
+			buildPhases = (
+				560F441A1B43A7050057F222 /* Sources */,
+				560F441B1B43A7050057F222 /* Frameworks */,
+				560F441C1B43A7050057F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperCaculator;
+			productName = SuperCaculator;
+			productReference = 560F441E1B43A7050057F222 /* SuperCaculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		560F44361B43A7050057F222 /* SuperCaculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560F44441B43A7050057F222 /* Build configuration list for PBXNativeTarget "SuperCaculatorTests" */;
+			buildPhases = (
+				560F44331B43A7050057F222 /* Sources */,
+				560F44341B43A7050057F222 /* Frameworks */,
+				560F44351B43A7050057F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560F44391B43A7050057F222 /* PBXTargetDependency */,
+			);
+			name = SuperCaculatorTests;
+			productName = SuperCaculatorTests;
+			productReference = 560F44371B43A7050057F222 /* SuperCaculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		560F44161B43A7050057F222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = danger;
+				TargetAttributes = {
+					560F441D1B43A7050057F222 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					560F44361B43A7050057F222 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 560F441D1B43A7050057F222;
+					};
+				};
+			};
+			buildConfigurationList = 560F44191B43A7050057F222 /* Build configuration list for PBXProject "SuperCaculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 560F44151B43A7050057F222;
+			productRefGroup = 560F441F1B43A7050057F222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				560F441D1B43A7050057F222 /* SuperCaculator */,
+				560F44361B43A7050057F222 /* SuperCaculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		560F441C1B43A7050057F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560F442D1B43A7050057F222 /* Main.storyboard in Resources */,
+				560F44321B43A7050057F222 /* LaunchScreen.xib in Resources */,
+				560F442F1B43A7050057F222 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560F44351B43A7050057F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		560F441A1B43A7050057F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560F44661B43AE0F0057F222 /* Common.m in Sources */,
+				560F442A1B43A7050057F222 /* ViewController.m in Sources */,
+				560F446C1B43AE3A0057F222 /* Expression.m in Sources */,
+				560F44631B43AE0F0057F222 /* GlossButtonViewController.m in Sources */,
+				560F445F1B43AE0F0057F222 /* Operator_Pre1.m in Sources */,
+				560F445E1B43AE0F0057F222 /* Operator.m in Sources */,
+				560F44651B43AE0F0057F222 /* CustomButton.m in Sources */,
+				560F44601B43AE0F0057F222 /* Operator_Mid2.m in Sources */,
+				560F446D1B43AE3A0057F222 /* Caculator.m in Sources */,
+				560F44641B43AE0F0057F222 /* CustomView.m in Sources */,
+				560F44621B43AE0F0057F222 /* Number.m in Sources */,
+				560F44271B43A7050057F222 /* AppDelegate.m in Sources */,
+				560F44611B43AE0F0057F222 /* Operator_End1.m in Sources */,
+				560F44241B43A7050057F222 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560F44331B43A7050057F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560F443E1B43A7050057F222 /* SuperCaculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		560F44391B43A7050057F222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 560F441D1B43A7050057F222 /* SuperCaculator */;
+			targetProxy = 560F44381B43A7050057F222 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		560F442B1B43A7050057F222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				560F442C1B43A7050057F222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		560F44301B43A7050057F222 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				560F44311B43A7050057F222 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		560F443F1B43A7050057F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		560F44401B43A7050057F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		560F44421B43A7050057F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SuperCaculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		560F44431B43A7050057F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SuperCaculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		560F44451B43A7050057F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SuperCaculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCaculator.app/SuperCaculator";
+			};
+			name = Debug;
+		};
+		560F44461B43A7050057F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SuperCaculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCaculator.app/SuperCaculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		560F44191B43A7050057F222 /* Build configuration list for PBXProject "SuperCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560F443F1B43A7050057F222 /* Debug */,
+				560F44401B43A7050057F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560F44411B43A7050057F222 /* Build configuration list for PBXNativeTarget "SuperCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560F44421B43A7050057F222 /* Debug */,
+				560F44431B43A7050057F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560F44441B43A7050057F222 /* Build configuration list for PBXNativeTarget "SuperCaculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560F44451B43A7050057F222 /* Debug */,
+				560F44461B43A7050057F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 560F44161B43A7050057F222 /* Project object */;
+}

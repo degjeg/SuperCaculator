@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8582E8B4-0ABA-4D46-87D7-F0D539070611</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SuperCaculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CFBACF2DFC7AB5ACF635CC5A6A223EDDAF26657E</key>
+		<string>github.com:degjeg/SuperCaculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SuperCaculator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CFBACF2DFC7AB5ACF635CC5A6A223EDDAF26657E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:degjeg/SuperCaculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CFBACF2DFC7AB5ACF635CC5A6A223EDDAF26657E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CFBACF2DFC7AB5ACF635CC5A6A223EDDAF26657E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SuperCaculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
