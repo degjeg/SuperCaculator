@@ -1,7 +1,7 @@
 supported operators
 
-![Screen shot](https://github.com/degjeg/SuperCaculator/blob/master/screenshot/screenshot1.png)
-![Screen shot](https://github.com/degjeg/SuperCaculator/blob/master/screenshot/screenshot2.png)   
+![Screen shot](https://github.com/degjeg/SuperCaculator/blob/master/screenshot/Screenshot1.png)
+![Screen shot](https://github.com/degjeg/SuperCaculator/blob/master/screenshot/Screenshot2.png)   
     +  :Add two numbers
     -  :Subtraction
     *  :Multiply
