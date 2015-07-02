@@ -35,6 +35,9 @@ enum OperatorPriority {
     OPERATOR_PRIVORITY_POW,//*，/
     OPERATOR_PRIVORITY_SIN,//sin,cos,tan,asin,acos,atan,...
     OPERATOR_PRIVORITY_FAC,//!阶乘
+    
+    
+    OPERATOR_PRIVORITY_MAX,//!阶乘
 };
 
 typedef enum  {

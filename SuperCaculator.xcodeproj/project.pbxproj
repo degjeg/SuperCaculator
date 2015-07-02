@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		560F44241B43A7050057F222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44231B43A7050057F222 /* main.m */; };
 		560F44271B43A7050057F222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44261B43A7050057F222 /* AppDelegate.m */; };
-		560F442A1B43A7050057F222 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44291B43A7050057F222 /* ViewController.m */; };
+		560F442A1B43A7050057F222 /* FunctionGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44291B43A7050057F222 /* FunctionGraphViewController.m */; };
 		560F442D1B43A7050057F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560F442B1B43A7050057F222 /* Main.storyboard */; };
 		560F442F1B43A7050057F222 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560F442E1B43A7050057F222 /* Images.xcassets */; };
 		560F44321B43A7050057F222 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560F44301B43A7050057F222 /* LaunchScreen.xib */; };
@@ -28,6 +28,9 @@
 		560F446F1B43C0280057F222 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F446E1B43C0280057F222 /* CoreGraphics.framework */; };
 		560F44741B43C1840057F222 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F44731B43C1840057F222 /* UIKit.framework */; };
 		560F44761B43C1900057F222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560F44751B43C1900057F222 /* Foundation.framework */; };
+		565E766C1B44DFF300E2D162 /* FunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E766B1B44DFF300E2D162 /* FunctionView.m */; };
+		56F8E6941B4436AA009B7D49 /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F8E6931B4436AA009B7D49 /* Function.m */; };
+		56F8E6971B443A5D009B7D49 /* OperatorX.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F8E6961B443A5D009B7D49 /* OperatorX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +49,8 @@
 		560F44231B43A7050057F222 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		560F44251B43A7050057F222 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		560F44261B43A7050057F222 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		560F44281B43A7050057F222 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		560F44291B43A7050057F222 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		560F44281B43A7050057F222 /* FunctionGraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionGraphViewController.h; sourceTree = "<group>"; };
+		560F44291B43A7050057F222 /* FunctionGraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionGraphViewController.m; sourceTree = "<group>"; };
 		560F442C1B43A7050057F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		560F442E1B43A7050057F222 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		560F44311B43A7050057F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,6 +82,13 @@
 		560F446E1B43C0280057F222 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		560F44731B43C1840057F222 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		560F44751B43C1900057F222 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		565067A11B44BC9E000BA48F /* CommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
+		565E766A1B44DFF300E2D162 /* FunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionView.h; sourceTree = "<group>"; };
+		565E766B1B44DFF300E2D162 /* FunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionView.m; sourceTree = "<group>"; };
+		56F8E6921B4436AA009B7D49 /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		56F8E6931B4436AA009B7D49 /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
+		56F8E6951B443A5D009B7D49 /* OperatorX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorX.h; sourceTree = "<group>"; };
+		56F8E6961B443A5D009B7D49 /* OperatorX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +136,13 @@
 				560F444B1B43ADED0057F222 /* caculator */,
 				560F44251B43A7050057F222 /* AppDelegate.h */,
 				560F44261B43A7050057F222 /* AppDelegate.m */,
-				560F44281B43A7050057F222 /* ViewController.h */,
-				560F44291B43A7050057F222 /* ViewController.m */,
+				560F44561B43AE0F0057F222 /* GlossButtonViewController.m */,
+				560F44571B43AE0F0057F222 /* GlossButtonViewController.h */,
+				560F44281B43A7050057F222 /* FunctionGraphViewController.h */,
+				560F44291B43A7050057F222 /* FunctionGraphViewController.m */,
+				565E766A1B44DFF300E2D162 /* FunctionView.h */,
+				565E766B1B44DFF300E2D162 /* FunctionView.m */,
+				565067A11B44BC9E000BA48F /* CommonDef.h */,
 				560F442B1B43A7050057F222 /* Main.storyboard */,
 				560F442E1B43A7050057F222 /* Images.xcassets */,
 				560F44301B43A7050057F222 /* LaunchScreen.xib */,
@@ -175,16 +190,18 @@
 				560F44511B43AE0F0057F222 /* Operator_Mid2.h */,
 				560F44521B43AE0F0057F222 /* Operator_End1.m */,
 				560F44531B43AE0F0057F222 /* Operator_End1.h */,
+				56F8E6951B443A5D009B7D49 /* OperatorX.h */,
+				56F8E6961B443A5D009B7D49 /* OperatorX.m */,
 				560F44541B43AE0F0057F222 /* Number.m */,
 				560F44551B43AE0F0057F222 /* Number.h */,
-				560F44561B43AE0F0057F222 /* GlossButtonViewController.m */,
-				560F44571B43AE0F0057F222 /* GlossButtonViewController.h */,
 				560F44581B43AE0F0057F222 /* CustomView.m */,
 				560F44591B43AE0F0057F222 /* CustomView.h */,
 				560F445A1B43AE0F0057F222 /* CustomButton.m */,
 				560F445B1B43AE0F0057F222 /* CustomButton.h */,
 				560F445C1B43AE0F0057F222 /* Common.m */,
 				560F445D1B43AE0F0057F222 /* Common.h */,
+				56F8E6921B4436AA009B7D49 /* Function.h */,
+				56F8E6931B4436AA009B7D49 /* Function.m */,
 			);
 			name = caculator;
 			sourceTree = "<group>";
@@ -312,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				560F44661B43AE0F0057F222 /* Common.m in Sources */,
-				560F442A1B43A7050057F222 /* ViewController.m in Sources */,
+				560F442A1B43A7050057F222 /* FunctionGraphViewController.m in Sources */,
 				560F446C1B43AE3A0057F222 /* Expression.m in Sources */,
 				560F44631B43AE0F0057F222 /* GlossButtonViewController.m in Sources */,
 				560F445F1B43AE0F0057F222 /* Operator_Pre1.m in Sources */,
@@ -320,6 +337,9 @@
 				560F44651B43AE0F0057F222 /* CustomButton.m in Sources */,
 				560F44601B43AE0F0057F222 /* Operator_Mid2.m in Sources */,
 				560F446D1B43AE3A0057F222 /* Caculator.m in Sources */,
+				565E766C1B44DFF300E2D162 /* FunctionView.m in Sources */,
+				56F8E6941B4436AA009B7D49 /* Function.m in Sources */,
+				56F8E6971B443A5D009B7D49 /* OperatorX.m in Sources */,
 				560F44641B43AE0F0057F222 /* CustomView.m in Sources */,
 				560F44621B43AE0F0057F222 /* Number.m in Sources */,
 				560F44271B43A7050057F222 /* AppDelegate.m in Sources */,

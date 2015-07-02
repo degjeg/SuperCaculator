@@ -50,6 +50,7 @@
 @property (retain) CustomButton *button9;
 @property (retain) CustomButton *button0;
 @property (retain) CustomButton *buttonPoint;
+@property (retain) CustomButton *buttonFun;
 
 @property (retain) CustomButton *buttonPlus;
 @property (retain) CustomButton *buttonMinus;
@@ -62,7 +63,7 @@
 @property (retain) NSMutableArray *buttons;
 
 @property (retain) UITextView *tvExpression;
-@property (retain) UITextView *tvResult;
+@property (retain) UILabel *tvResult;
 
 @property (retain) Expression *expression;
 @property (retain) Caculator *caculator;

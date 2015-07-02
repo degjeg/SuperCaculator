@@ -11,11 +11,8 @@
 #import "CustomView.h"
 #import "Caculator.h"
 #import "Operator.h"
-
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#define PI 3.1415926
-
+#import "CommonDef.h"
+#import "FunctionGraphViewController.h"
 @implementation GlossButtonViewController
 
 //@synthesize	button1=_button1;
@@ -104,6 +101,7 @@
     CGFloat row2=row1+height+spacingy;
     CGFloat row3=row2+height+spacingy;
     CGFloat row4=row3+height+spacingy;
+    CGFloat row5=row4+height+spacingy;
     CGFloat spacingx=0;
     CGFloat col2=col1+width+spacingx;
     CGFloat col3=col2+width+spacingx;
@@ -132,6 +130,11 @@
     _button0.frame = CGRectMake(col1,row4, width*2, height);
     self.buttonPoint = [[CustomButton alloc] initWithText:@"." target:self selector:@selector(buttonTapped:)];
     _buttonPoint.frame = CGRectMake(col3,row4, width, height);
+   
+    self.buttonFun = [[CustomButton alloc] initWithText:@"f(x)" target:self selector:@selector(buttonTapped:)];
+    self.buttonFun.frame = CGRectMake(col1,row5, width, height);
+    
+    
     
     self.buttonEquals = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.0f saturation:0.01f brightness:1.0f];
     _buttonEquals.frame = CGRectMake(col4,row3, width, height*2);
@@ -173,6 +176,7 @@
                     _button9,
                     _button0,
                     _buttonPoint,
+                    self.buttonFun,
                     _buttonPlus,
                     _buttonEquals,
                     _buttonMinus,
@@ -203,22 +207,24 @@
     
     //    self.expression.text = @"9-(3*(4-2*(2-4)))";
 //    self.expression.text = @"sin45";
-        self.tvExpression.text = @"0-2^-5+6*sin(30)";
+//        self.tvExpression.text = @"0-2^-5+6*sin(30)";
+    self.tvExpression.text = @"sin(x/14)*x";
     [self.tvExpression addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
     
     [self.view addSubview:self.tvExpression];
     //    [formulaTextField first];
     
-    self.tvResult = [[UITextView alloc]init];
+    self.tvResult = [[UILabel alloc]init];
     self.tvResult.frame = CGRectMake(10, 120, SCREEN_WIDTH-20, 40);
     self.tvResult.backgroundColor = [UIColor colorWithRed:0.8 green:0.4 blue:0.9 alpha:0];
     self.tvResult.textAlignment = NSTextAlignmentRight;
     self.tvResult.font = [UIFont fontWithName:@"Arial" size:20.0f];
-    self.tvResult.keyboardType = UIKeyboardTypeASCIICapable;
+//    self.tvResult.keyboardType = UIKeyboardTypeASCIICapable;
     self.tvResult.textColor = [UIColor blackColor];
     self.tvResult.text = @"0";
     [self.view addSubview:self.tvResult];
     
+//    [self.tvResult addt
 }
 
 -(void)drawInBitmap {
@@ -278,7 +284,7 @@
     
     //画弧形
     CGMutablePathRef pathArc = CGPathCreateMutable();
-    CGPathAddArc(pathArc, &transform, 100, 100, 40, PI*0/180, PI*270/180, NO);
+    CGPathAddArc(pathArc, &transform, 100, 100, 40, M_PI*0/180, M_PI*270/180, NO);
     CGContextAddPath(gc, pathArc);
     //    [[UIColor blackColor] setFill];
     //
@@ -318,7 +324,15 @@
     [self.tvExpression resignFirstResponder];
     
     [self.expression.expression setString:self.tvExpression.text];
-    if(sender == self.button0) {
+    if(sender == self.buttonFun) {
+        FunctionGraphViewController *funVc = [[FunctionGraphViewController alloc] initWithNibName:nil bundle:[NSBundle mainBundle]];
+        
+        funVc.function = [[Function alloc]init];
+        funVc.function.function = self.tvExpression.text;
+        [self presentViewController:funVc animated:YES completion:^(void){
+            NSLog(@"done...");
+        }];  
+    } else if(sender == self.button0) {
         [self.expression add:@"0" at:-1];
     } else if(sender == self.button1) {
         [self.expression add:@"1" at:-1];

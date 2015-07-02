@@ -26,7 +26,7 @@
         self.parameterCount = parameterCount;
         self.privority = pro;
         
-        self.unit = UNIT_ANGLE;
+        self.unit = UNIT_Radian;
         
     }
     

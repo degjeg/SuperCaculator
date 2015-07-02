@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SuperCaculator/caculator/GlossButtonViewController.m"
-            timestampString = "457433764.017303"
+            timestampString = "457502869.666323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "-drawInBitmap"
             landmarkType = "5">
          </BreakpointContent>

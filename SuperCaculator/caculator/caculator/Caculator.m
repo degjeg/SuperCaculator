@@ -118,6 +118,7 @@
                     if(subExpression && subExpression.length > 0) {
                         Caculator *caculatorTmp = [[Caculator alloc]init];
                         caculatorTmp.expression = subExpression;
+                        caculatorTmp.sos = self.sos;
                         caculateResult = [caculatorTmp evaulateExpression:subExpression];
                         scanResult.range = NSMakeRange(scanResult.range.location, subExpression.length + 2);
                         if(caculateResult.retcode == CACULAT_OK) {
@@ -247,7 +248,11 @@
 
 
 -(int)operatorGot:(Operator*)operator {
-    if(operator.type == OPERATOR_END) { //后置运算符
+    
+    if(operator.parameterCount == 0) {
+        [self numberGot:[operator caculate:0].number];
+        return CACULAT_OK;
+    } else if(operator.type == OPERATOR_END) { //后置运算符
         if(self.lastResult && self.lastResult.type == TYPE_NUMBER) {//上次是个数字
             Number* number = [self popNumber];
             CaculateResult caculateResult = [operator caculate:number.number];

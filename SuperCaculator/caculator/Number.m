@@ -23,9 +23,19 @@
 -(instancetype) initWithNumber:(LDouble) number {
     if( self  = [super init]) {
         self.number = number;
-    
+        self.valid = YES;
     }
     
     return self;
 }
+
+-(id)copyWithZone:(NSZone *)zone {
+    id copy = [[[self class] allocWithZone:zone] init];
+    [copy setValid:self.valid];
+    [copy setNumber:self.number];
+    return copy;
+}
+
+
+
 @end

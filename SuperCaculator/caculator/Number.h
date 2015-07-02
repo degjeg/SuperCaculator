@@ -8,8 +8,10 @@
 
 #import "Operator.h"
 
-@interface Number : NSObject
+@interface Number : NSObject<NSCopying>
 
+
+@property(assign, nonatomic) BOOL valid;
 @property(assign, nonatomic) LDouble number;
 
 
