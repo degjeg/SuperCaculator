@@ -10,7 +10,7 @@
 
 @implementation Operator_Fac
 
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
 
     if(n1 < 0) {
@@ -18,7 +18,7 @@
         return result;
     }
     
-    n1 = (long long)n1;
+    long long n = n1.number;
     if(n1 == 0) {//如果结果为0，直接返回
         return result;
     }
@@ -27,7 +27,7 @@
     LDouble fac = 1;
     LDouble step = 1;
     
-    while(step <= n1) {
+    while(step <= n) {
         fac *= step;
         step++;
     }

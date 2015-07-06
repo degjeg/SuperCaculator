@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560AAD091B4A36B9000F598A /* Operator_Avg.m in Sources */ = {isa = PBXBuildFile; fileRef = 560AAD081B4A36B9000F598A /* Operator_Avg.m */; };
+		560AAD0C1B4A6789000F598A /* Operator_Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 560AAD0B1B4A6789000F598A /* Operator_Com.m */; };
 		560F44241B43A7050057F222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44231B43A7050057F222 /* main.m */; };
 		560F44271B43A7050057F222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44261B43A7050057F222 /* AppDelegate.m */; };
 		560F442A1B43A7050057F222 /* FunctionGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560F44291B43A7050057F222 /* FunctionGraphViewController.m */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560AAD071B4A36B9000F598A /* Operator_Avg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator_Avg.h; sourceTree = "<group>"; };
+		560AAD081B4A36B9000F598A /* Operator_Avg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operator_Avg.m; sourceTree = "<group>"; };
+		560AAD0A1B4A6789000F598A /* Operator_Com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator_Com.h; sourceTree = "<group>"; };
+		560AAD0B1B4A6789000F598A /* Operator_Com.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operator_Com.m; sourceTree = "<group>"; };
 		560F441E1B43A7050057F222 /* SuperCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560F44221B43A7050057F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		560F44231B43A7050057F222 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -190,6 +196,10 @@
 				560F44511B43AE0F0057F222 /* Operator_Mid2.h */,
 				560F44521B43AE0F0057F222 /* Operator_End1.m */,
 				560F44531B43AE0F0057F222 /* Operator_End1.h */,
+				560AAD071B4A36B9000F598A /* Operator_Avg.h */,
+				560AAD081B4A36B9000F598A /* Operator_Avg.m */,
+				560AAD0A1B4A6789000F598A /* Operator_Com.h */,
+				560AAD0B1B4A6789000F598A /* Operator_Com.m */,
 				56F8E6951B443A5D009B7D49 /* OperatorX.h */,
 				56F8E6961B443A5D009B7D49 /* OperatorX.m */,
 				560F44541B43AE0F0057F222 /* Number.m */,
@@ -330,6 +340,7 @@
 			files = (
 				560F44661B43AE0F0057F222 /* Common.m in Sources */,
 				560F442A1B43A7050057F222 /* FunctionGraphViewController.m in Sources */,
+				560AAD0C1B4A6789000F598A /* Operator_Com.m in Sources */,
 				560F446C1B43AE3A0057F222 /* Expression.m in Sources */,
 				560F44631B43AE0F0057F222 /* GlossButtonViewController.m in Sources */,
 				560F445F1B43AE0F0057F222 /* Operator_Pre1.m in Sources */,
@@ -342,6 +353,7 @@
 				56F8E6971B443A5D009B7D49 /* OperatorX.m in Sources */,
 				560F44641B43AE0F0057F222 /* CustomView.m in Sources */,
 				560F44621B43AE0F0057F222 /* Number.m in Sources */,
+				560AAD091B4A36B9000F598A /* Operator_Avg.m in Sources */,
 				560F44271B43A7050057F222 /* AppDelegate.m in Sources */,
 				560F44611B43AE0F0057F222 /* Operator_End1.m in Sources */,
 				560F44241B43A7050057F222 /* main.m in Sources */,

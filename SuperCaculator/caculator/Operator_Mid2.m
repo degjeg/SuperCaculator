@@ -9,29 +9,11 @@
 #import "Operator_Mid2.h"
 
 
-
-@implementation Operator_Mid2 : Operator
-
--(CaculateResult) caculateReal:(LDouble*)parameters {
-    LDouble number1 = parameters[0];
-    LDouble number2 = parameters[1];
-
-    return [self caculate:number1 n2:number2];
-}
-
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2 {
-    CaculateResult result = { 0 };;
-    return result;
-}
-
-@end
-
-
 @implementation Operator_Add
 
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2  {
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*) n2  {
     CaculateResult result = { 0 };;
-    result.number = n1 + n2;
+    result.number = n1.number + n2.number;
     
     return result;
 }
@@ -40,18 +22,18 @@
 
 
 @implementation Operator_Sub
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2 {
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*) n2 {
     CaculateResult result = { 0 };;
-    result.number = n1 - n2;
+    result.number = n1.number - n2.number;
     
     return result;
 }
 @end
 
 @implementation Operator_Mul
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2 {
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*) n2 {
     CaculateResult result = { 0 };
-    result.number = n1 * n2;
+    result.number = n1.number * n2.number;
     
     return result;
 }
@@ -59,15 +41,15 @@
 
 @implementation Operator_Div
 
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2  {
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*) n2  {
     
     CaculateResult result = { 0 };
     
-    if(n2 == 0) {
+    if(n2.number == 0) {
         result.retcode = CACULAT_DIVIDE_ZERO;
         return result;
     }
-    result.number = n1 / n2;
+    result.number = n1.number / n2.number;
     
     return result;
 }
@@ -75,11 +57,11 @@
 
 @implementation Operator_Pow
 
--(CaculateResult)caculate:(LDouble)n1 n2:(LDouble) n2  {
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*) n2  {
     
     CaculateResult result = { 0 };
     
-    result.number = powl(n1, n2);
+    result.number = powl(n1.number, n2.number);
     
     return result;
 }

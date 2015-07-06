@@ -37,5 +37,12 @@
 }
 
 
+-(void) addData:(LDouble) data {
+    if( !self.exData ) {
+        self.exData = [[NSMutableArray alloc]init];
+    }
 
+    Number* number = [[Number alloc]initWithNumber:data];
+    [self.exData addObject:number];
+}
 @end

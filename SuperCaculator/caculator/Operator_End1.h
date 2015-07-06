@@ -10,6 +10,6 @@
 #import "Operator_Pre1.h"
 
 //计算阶乘
-@interface Operator_Fac : Operator_Pre1
+@interface Operator_Fac : Operator
 
 @end

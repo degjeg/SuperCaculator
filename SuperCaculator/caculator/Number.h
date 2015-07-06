@@ -6,14 +6,21 @@
 //
 //
 
-#import "Operator.h"
+
+#import <Foundation/Foundation.h>
+
+typedef long double LDouble;
 
 @interface Number : NSObject<NSCopying>
 
 
-@property(assign, nonatomic) BOOL valid;
-@property(assign, nonatomic) LDouble number;
+@property(nonatomic, assign) BOOL valid;
+@property(nonatomic, assign) LDouble number;
+@property(nonatomic, retain) NSMutableArray* exData;//扩展数据
 
 
 -(instancetype) initWithNumber:(LDouble) number;
+
+-(void) addData:(LDouble) data;
+
 @end

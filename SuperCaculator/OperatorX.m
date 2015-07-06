@@ -10,7 +10,7 @@
 
 @implementation OperatorX
 
--(CaculateResult) caculate:(LDouble)number,... {
+-(CaculateResult) caculate:(NSArray*)number {
     CaculateResult result = { 0 };
     result.retcode = CACULAT_OK;
     result.number = self.value;

@@ -9,25 +9,10 @@
 #import "Operator_Pre1.h"
 
 
-
-@implementation Operator_Pre1
--(CaculateResult) caculateReal:(LDouble*)parameters {
-    LDouble number1 = parameters[0];
-    
-    return [self caculate:number1];
-}
-
--(CaculateResult)caculate:(LDouble) n1 {
-    CaculateResult result = { 0 };
-    return result;
-}
-
-@end
-
 @implementation Operator_Sin
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = [self toRadian:n1];
+    LDouble radian = [self toRadian:n1.number];
     
     result.number = sinl(radian);
     return result;
@@ -35,9 +20,9 @@
 @end
 
 @implementation Operator_Cos
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = [self toRadian:n1];
+    LDouble radian = [self toRadian:n1.number];
     
     result.number = cosl(radian);
     return result;
@@ -45,9 +30,9 @@
 @end
 
 @implementation Operator_Tan
--(CaculateResult)caculate:(LDouble) n1  {
+-(CaculateResult)caculate1:(Number*) n1  {
     CaculateResult result = { 0 };
-    LDouble radian = [self toRadian:n1];
+    LDouble radian = [self toRadian:n1.number];
     
     LDouble sinValue = sinl(radian);
     LDouble cosValue = cosl(radian);
@@ -63,9 +48,9 @@
 @end
 
 @implementation Operator_Cot
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = [self toRadian:n1];
+    LDouble radian = [self toRadian:n1.number];
     
     LDouble sinValue = sinl(radian);
     LDouble cosValue = cosl(radian);
@@ -82,9 +67,9 @@
 
 
 @implementation Operator_ASin
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = asinl(n1);
+    LDouble radian = asinl(n1.number);
     
     result.number = [self toAngle:radian];
     return result;
@@ -92,9 +77,9 @@
 @end
 
 @implementation Operator_ACos
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = acosl(n1);
+    LDouble radian = acosl(n1.number);
     
     result.number = [self toAngle:radian];
     return result;
@@ -102,9 +87,9 @@
 @end
 
 @implementation Operator_ATan
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
-    LDouble radian = atanl(n1);
+    LDouble radian = atanl(n1.number);
     
     result.number = [self toAngle:radian];
     return result;
@@ -112,11 +97,11 @@
 @end
 
 @implementation Operator_ACot
--(CaculateResult)caculate:(LDouble) n1 {
+-(CaculateResult)caculate1:(Number*) n1 {
     CaculateResult result = { 0 };
     LDouble radian = 0;//[self toRadian:n1];
-    if(n1 != 0) {
-        radian = atanl(1 / n1);
+    if(n1.number != 0) {
+        radian = atanl(1 / n1.number);
     }
     
     result.number = [self toAngle:radian];

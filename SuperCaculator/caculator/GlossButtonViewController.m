@@ -208,7 +208,10 @@
     //    self.expression.text = @"9-(3*(4-2*(2-4)))";
 //    self.expression.text = @"sin45";
 //        self.tvExpression.text = @"0-2^-5+6*sin(30)";
-    self.tvExpression.text = @"sin(x/14)*x";
+//    self.tvExpression.text = @"sin(x/14)*x";
+//        self.tvExpression.text = @"100/x+100/(x-1)";
+    self.tvExpression.text = @"min(3, 4, max(4+5*(9+0),sin(3)),    cos(3),33)";
+
     [self.tvExpression addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
     
     [self.view addSubview:self.tvExpression];

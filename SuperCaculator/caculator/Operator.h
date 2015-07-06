@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "Number.h"
 
-typedef long double LDouble;
 
 typedef enum {
     OPERATOR_PRE, //1//前置运算符，符号在操作数的前面，如0x,0b,0o,sin,cos,....
@@ -26,6 +26,8 @@ typedef enum  {
     CACULAT_BRACKET_NOT_MATCH,
     
     CACULAT_FAC_MINUS,//不能计算负数的阶乘
+    CACULAT_SQRT_MINUS,//不能计算负数的阶乘
+    CACULAT_LOG_MINUS,//
 
 } CaculateResultCode;
 
@@ -67,9 +69,14 @@ typedef struct  {
 
 -(BOOL)matchString:(NSString*)str;
 
--(CaculateResult) caculate:(LDouble)number,...;//first number is return value
+//-(CaculateResult) caculate:(Number*)number,...;//first number is return value
+//
+//-(CaculateResult) caculateReal:(Number*) parameters;
 
--(CaculateResult) caculateReal:(LDouble*) parameters;
+-(CaculateResult)caculate:(NSArray*) parameters;
+-(CaculateResult)caculate1:(Number*)n1;
+-(CaculateResult)caculate2:(Number*)n1 n2:(Number*)n2;
+
 
 -(LDouble) toRadian:(LDouble)number;
 
