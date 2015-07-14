@@ -33,9 +33,9 @@ supported operators
         ln
 	lg
 	log   log(3,81) = 4
-   平均数
-   	avg 算数平均数 avg(3,4,5,6) = (3+4+5+6)/4=4.5
- 	avgg //几何平均数//pow(x1*x2*x3..., 1/n)
+平均数
+	avg 算数平均数 avg(3,4,5,6) = (3+4+5+6)/4=4.5
+	avgg //几何平均数//pow(x1*x2*x3..., 1/n)
 	avgh //调和平均数   n/(1/x1+1/x2...)
 	avgm //平方平均数//sqrt((x1^2+x2^2+...)/n)
 
