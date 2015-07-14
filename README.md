@@ -25,15 +25,16 @@ supported operators
     lcm  //最小公倍数     lcm（3，4，5，6） ＝ 60
     ceil
     floor
-    round
-乘方和开方
+    round 
+    乘方和开方
     cube 三次方根
     sqrt 二次方
     pow  x^n   pow(3,4) = 81
     ln
     lg
     log   log(3,81) = 4
-平均数
+    
+    平均数
     avg 算数平均数 avg(3,4,5,6) = (3+4+5+6)/4=4.5
     avgg //几何平均数//pow(x1*x2*x3..., 1/n)
     avgh //调和平均数   n/(1/x1+1/x2...)
