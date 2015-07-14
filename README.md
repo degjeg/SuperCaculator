@@ -17,19 +17,17 @@ supported operators
     ! Factorial example:6!=6*5*4*3*2*1 = 720
     
     other : developing
-
-   //common
-   min  ex:min(3,4,9)=3;
-   max  ex:max(88,4,500) = 500
-   abs  ex:abs(5) = 5 abs(-8) = 8
-   gcd  //最大公约数ex       gcd(8,4,90) = 2
-   lcm  //最小公倍数     lcm（3，4，5，6） ＝ 60
-   ceil 
-   floor
-   round
-   
-   乘方和开方
-   	cube 三次方根
+    //common
+    min  ex:min(3,4,9)=3;
+    max  ex:max(88,4,500) = 500
+    abs  ex:abs(5) = 5 abs(-8) = 8
+    gcd  //最大公约数ex       gcd(8,4,90) = 2
+    lcm  //最小公倍数     lcm（3，4，5，6） ＝ 60
+    ceil
+    floor
+    round
+ 乘方和开方
+   cube 三次方根
         sqrt 二次方
 	pow  x^n   pow(3,4) = 81
         ln
